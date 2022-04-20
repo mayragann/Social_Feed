@@ -1,4 +1,4 @@
-
+import CustomButton from "../CustomButton/CustomButton"; 
 const DisplayPost  = (props) => {
     return (  
         <table>
@@ -9,7 +9,7 @@ const DisplayPost  = (props) => {
         <tbody>
         {props.parentPosts.map((entry) =>{
             return (
-            <div>
+            <>
             <tr>
                 <td>{entry.name}</td>
             </tr>
@@ -18,10 +18,10 @@ const DisplayPost  = (props) => {
             </tr>
             <tr>   
                 <button>Like</button>
-                <button>Dislike</button>
+                <CustomButton message="Dislike!"/>
             </tr>
            
-            </div>
+            </>
             );
           })}
         </tbody>
