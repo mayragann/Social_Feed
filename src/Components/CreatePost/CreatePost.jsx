@@ -7,7 +7,7 @@ const CreatePost = (props) => {
     const [post, setPost] = useState('');
 
     function handleSubmit(event){
-        event.PreventDefault();
+        event.preventDefault();
         let newEntry ={
                 name: name,
                 post: post
