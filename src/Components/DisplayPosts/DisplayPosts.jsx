@@ -1,4 +1,4 @@
-import CustomButton, { ToggleButtons } from "../CustomButton/CustomButton"; 
+import ToggleButtons from "../ToggleButtons/ToggleButtons"
 const DisplayPost  = (props) => {
     return (  
         <table>

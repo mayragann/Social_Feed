@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import "./CustomButton.css"
+import "./ToggleButtons.css"
 
 export class ToggleButtons extends  Component{
     constructor(props){
