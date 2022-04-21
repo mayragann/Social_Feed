@@ -1,4 +1,4 @@
-.active-like{
+/* .active-like{
     background-color: green;
 }
 
@@ -9,4 +9,16 @@
 
 .inactive{
     background-color:gray;
+} */
+.like-button, .dislike-button {
+	border-radius: 5px;
+}
+.liked {
+	background-color: green;
+	color: white;
+}
+
+ .disliked {
+	background-color: red;
+	color: white;
 }

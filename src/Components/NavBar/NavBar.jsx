@@ -1,10 +1,12 @@
-import React from "react";  
+import React from "react"; 
+import "./NavBar.css"
 
 
 const NavBar = () => {
     return(
     <nav className="navbar navbar-light bg-light">
-        <h2 className='navbar-brand'>SocialFeed</h2>
+        <h2 className='navbar-brand'>Social<span>Feed</span></h2>
+
     </nav>
     );
 }

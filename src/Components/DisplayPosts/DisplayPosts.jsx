@@ -1,4 +1,4 @@
-import CustomButton from "../CustomButton/CustomButton"; 
+import CustomButton, { ToggleButtons } from "../CustomButton/CustomButton"; 
 const DisplayPost  = (props) => {
     return (  
         <table>
@@ -17,8 +17,8 @@ const DisplayPost  = (props) => {
                 <td>{entry.post}</td>
             </tr>
             <tr>   
-                <button>Like</button>
-                <CustomButton message="Dislike!"/>
+
+                <ToggleButtons />
             </tr>
            
             </>
