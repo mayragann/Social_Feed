@@ -45,3 +45,6 @@ input {
     border-radius: 10px;
     width:60px;
 }
+@media screen and (min-width: 600px) {
+
+}
