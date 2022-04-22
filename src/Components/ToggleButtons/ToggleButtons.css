@@ -1,24 +1,15 @@
-/* .active-like{
-    background-color: green;
-}
 
-.active-dislike{
-    background-color: red;
-
-}
-
-.inactive{
-    background-color:gray;
-} */
-.like-button, .dislike-button {
-	border-radius: 5px;
-}
-.liked {
+.active-like {
 	background-color: green;
 	color: white;
 }
 
- .disliked {
+.active-dislike {
 	background-color: red;
 	color: white;
+}
+
+.inactive{
+	background-color: gray;
+	color:white;
 }

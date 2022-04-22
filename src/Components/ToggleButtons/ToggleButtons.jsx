@@ -1,42 +1,38 @@
-import React, { Component } from 'react';
+import React, { useState } from 'react';
 import "./ToggleButtons.css"
 
-export class ToggleButtons extends  Component{
-    constructor(props){
-        super(props)
-        this.state ={
 
+const ToggleButtons = (props) => {
+    const[likeButton, setLikeButton] = useState('inactive');
+    const[dislikeButton, setDislikeButton] = useState('inactive');
+
+
+    function handleClickLike(){
+
+        if(likeButton === 'inactive'){
+            setLikeButton('active-like');
+            setDislikeButton('inactive')
+        }
+        else{
+            setDislikeButton('inactive');
         }
     }
-    render (){
+    function handleClickDislike(){
+
+        if(dislikeButton === 'inactive'){
+            setDislikeButton('active-dislike');
+            setLikeButton('inactive')
+        }
+        else{
+            setLikeButton('inactive');
+        }
+    }
         return(
             <div>
-                <button className='btn btn-primary'>like</button>
-                <button className='btn btn-secondary'>dislike</button>
+                <button className={likeButton} onClick={handleClickLike}>Like!</button>
+                <button className={dislikeButton} onClick={handleClickDislike}>Dislike!</button>
             </div>
         )
     }
-}
 
 export default  ToggleButtons;
-// const CustomButton = (props) => {
-//     const[buttonClass, setButtonClass] = useState('inactive');
-
-
-//     function handleClick(){
-
-//         if(buttonClass === "inactive"){
-//             setButtonClass('active-dislike');
-//         }
-//         else{
-//             setButtonClass("inactive");
-//         }
-//     }
-//         return(
-//             <div>
-//                 <button className={buttonClass} onClick={handleClick}>{props.message}</button>
-//             </div>
-//         )
-//     }
-
-// export default  CustomButton;

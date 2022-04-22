@@ -1,0 +1,45 @@
+
+.display-table{
+    margin-left:20px;
+    margin-right:20px;
+    margin-bottom:20px;
+
+
+
+}
+
+.top-border{
+    margin-top:5px;
+    float:right;
+    margin-bottom:20px;
+
+}
+.top{
+    margin-top:10px;
+    margin-bottom:20px;
+
+}
+.divider{
+    margin-top:20px;
+    border-top: 1px solid rgb(0, 0, 0);
+
+    
+}
+.name{
+    padding-top: 30px;
+    padding-bottom: 10px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color:rgba(29, 28, 28, 0.723);
+    font-size: 1em;
+    
+
+}
+.post{
+    font-family:Arial, Helvetica, sans-serif;
+    color:rgba(29, 28, 28, 0.723);
+    font-size: 1em;
+    text-align: justify;
+    text-justify: inter-word;
+
+}
