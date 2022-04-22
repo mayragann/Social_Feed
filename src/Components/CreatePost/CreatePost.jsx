@@ -12,6 +12,7 @@ const CreatePost = (props) => {
         let newEntry ={
                 name: name,
                 post: post
+                + new Date()
 
         }
         console.log(newEntry)
@@ -23,8 +24,9 @@ const CreatePost = (props) => {
                 <label className='name-label'>Name</label>
                 <input className='name-input' type='text' value={name} onChange={(event) => setName(event.target.value)}/>
             </div>
-            <div className='post-content'>
+            <div className='content'>
                 <label className='post-label'>Post</label>
+
                 <textarea className='post-input' rows='10' cols="10" value={post} onChange={(event) => setPost(event.target.value)}/>
                 <button className='submit-button' type='submit'>Create</button>
             </div>
